@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Guilherme Frank</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac623fa498.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+        <style>
+        @media (max-width: 1024px) {
+            .textimg {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .texbox {
+                height: auto;
+            }
+
+            .menu nav a {
+                padding-right: 30px;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header {
+                height: auto;
+                position: static;
+            }
+
+            .logo, .menu, .sociais {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .menu nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .sociais {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .texbox h1 {
+                font-size: 30px;
+            }
+
+            .texbox h2 {
+                font-size: 24px;
+            }
+
+            .texbox p, .habcard p, .procard p {
+                font-size: 16px;
+            }
+
+            .habcard h2, .procard h2 {
+                font-size: 22px;
+            }
+
+            .buttoncurriculo {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+
+            .icones {
+                font-size: 40px;
+                gap: 30px;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h2 style="font-family: Oswald, sans-serif;">
+                        &lt; Guilherme /&gt;
+                    </h2>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#projetos">Projetos</a>
+                    </nav>
+                </div>
+                <div class="sociais">
+                    <button>
+                        <a href="https://wa.me/556295636219" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="https://www.instagram.com/ofrank_dev/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="https://www.linkedin.com/in/guilherme-frank-dev/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="https://github.com/ofrank-dev" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre" class="sobre">
+            <div class="textimg">
+                <img src="imagens/foto.jpeg" alt="foto do Guilherme" class="imgsobre">
+                <div class="texbox">
+                    <h1>&lt; Olá, Mundo! /&gt;</h1>
+                    <h2 translate="no">I'm, Guilherme Frank</h2>
+                    <p>Atualmente, curso o 1º período de Engenharia de Software na Faculdade Anhanguera. Fascinado por
+                        tecnologia, estou sempre explorando novas ferramentas e aprimorando minhas habilidades. Busco
+                        oportunidades como desenvolvedor e, em breve, pretendo me tornar um profissional Full Stack.</p>
+
+                    <a href="Currículo Guilherme Frank Dev.pdf" target="_blank">
+                        <button class="buttoncurriculo">
+                            <i class="fa-solid fa-download"></i> VER CURRÍCULO
+                        </button>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="habcontainer" id="habilidades">
+            <div class="ttuhab">
+                <h1>HABILIDADES GERAIS</h1>
+            </div>
+            <div class="habcontainer">
+                <div class="habcard">
+                    <li>
+                        <i class="fa-solid fa-laptop"></i>
+                        <h2>Front-End</h2>
+                        <p>Desenvolvo aplicações web interativas com JavaScript, estruturadas em HTML5 e estilizadas com
+                            CSS3, seguindo as melhores práticas para desenvolver interfaces modernas, responsivas e
+                            voltadas
+                            à experiência do usuário.</p>
+                    </li>
+                </div>
+                <div class="habcard">
+                    <li>
+                        <i class="fa-regular fa-file"></i>
+                        <h2>Back-End</h2>
+                        <p>Tenho experiência acadêmica em desenvolvimento back-end utilizando Python e estou em
+                            constante
+                            aperfeiçoamento para ampliar meus conhecimentos na área, incluindo bancos de dados e outras
+                            tecnologias essenciais do back-end.</p>
+                    </li>
+                </div>
+                <div class="habcard">
+                    <li>
+                        <i class="fa-regular fa-flag"></i>
+                        <h2>Idiomas</h2>
+                        <p>Inglês nível B1: tenho comunicação e compreensão básica, com leitura em nível intermediário.
+                            Estou continuamente estudando para alcançar a fluência no idioma.</p>
+                    </li>
+                </div>
+            </div>
+        </section>
+        <section class="procontainer" id="projetos">
+            <div class="procontainer"></div>
+            <h1 class="ttupro">PROJETOS</h1>
+            <div class="procard">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="imgproj1" src="imagens/projeto-portifolio.jpg" alt="foto do Portfólio">
+                    <h2>Portfólio</h2>
+                    <p>Este portfólio tem como propósito apresentar meus projetos, destacar minhas habilidades técnicas
+                        e
+                        proporcionar uma navegação fluida e interativa para recrutadores e visitantes.</p>
+                </a>
+            </div>
+            </div>
+        </section>
+        <section class="icones">
+            <div class="icones">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-python"></i></li>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copy">
+            &copy;Direitos Reservados | Guilherme Frank
+        </div>
+    </footer>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+</body>
+
+</html>

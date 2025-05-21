@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Ancizar Sans", sans-serif;
+
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+header{
+    background-color: #E6EAE1;
+    width: 100%;
+    padding: 0px;
+    position: fixed;    
+    top: 0;
+    height: 60px;
+}
+
+.logo{
+    margin-right: auto;
+    font-size: 25px;
+    cursor: pointer;
+    background: linear-gradient(to right, #0f0e5e, #696969);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.menu{
+    margin: auto;
+}
+
+.menu nav a{
+    color: black;
+    text-decoration: none;
+    padding-right: 75px;
+    font-size: 22px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 5px;
+    background-image: linear-gradient(45deg, #0f0e5e, #696969);
+    position: absolute;
+    top: 26px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 50px;
+}
+
+.sociais{
+    margin-left: auto;
+        
+}
+
+.sociais button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #0f0e5e, #696969);
+    border: none;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sociais button i{
+    font-size: 23px;
+    color: #F0F0EC;
+}
+
+.sobre{
+    padding-top: 60px;  
+    margin-top: -60px; 
+
+}
+
+.textimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    margin: 200px auto;
+    width: 80%;    
+}
+
+.imgsobre{
+    max-width: 400px;
+    float: left;
+    border: 3px solid #F0F0EC;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.texbox{
+    color: black;
+    height: 300px;
+    margin: 15px;
+    padding: 20px;
+}
+
+.texbox h1{
+    font-size: 40px;
+    height: 80px;
+    font-family: Oswald, sans-serif;
+    background: linear-gradient(0deg, #0f0e5e, #696969); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -45px
+    
+    
+}
+
+.texbox h2{
+    font-size: 30px;
+}
+
+.texbox p{
+    font-size: 20px;
+}
+
+.buttoncurriculo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #2e2c2c 37%, #cfcdcd 89%);
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s; 
+    margin-top: 20px
+}
+
+.buttoncurriculo i{
+    margin-right: 0.5rem;
+}
+
+.buttoncurriculo:hover{
+    transform: scale(1.05);
+}
+
+.ttuhab{
+    font-size: 23px;
+    text-align: center;
+    margin: 45px;
+}
+
+.habcontainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 70px;
+
+}
+
+.habcard {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 23px;
+  width: 400px;
+  box-shadow: 0 4px 00px rgba(0, 0, 0, 0.1);
+  list-style: none; 
+  text-align: center;
+  border: 3px solid #696969; 
+}
+
+.habcard i{
+    font-size: 30px;
+}
+
+
+.habcard h2{
+    font-size: 28px;
+    margin: 15px;
+}
+
+.habcard p{
+    font-size: 20px;
+}
+
+.procontainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+
+.procard {
+  width: 380px;
+  border: 3px solid #696969;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.procard a{
+
+  text-decoration: none; 
+  color: inherit; 
+
+}
+
+.procard img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #696969;
+}
+
+.ttupro{
+    font-size: 32px;
+    text-align: center;
+    margin: -55px 0;
+    width: 100%;          
+    display: block;
+}
+
+.procard h2 {
+  font-size: 28px;
+  margin: 15px;
+}
+
+.procard p {
+  font-size: 20px;
+}
+
+.habcard, .procard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habcard:hover, .procard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.icones{
+    display: flex;
+    text-decoration: none;
+    font-size: 55px;
+    justify-content: center;
+    list-style: none;
+    margin: 10px;
+    height: 20x;
+    gap: 100px;
+    background-image: linear-gradient(45deg, #0f0e5e, #696969);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.copy{
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+}
